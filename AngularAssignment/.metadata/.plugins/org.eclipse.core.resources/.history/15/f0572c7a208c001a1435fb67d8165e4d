@@ -1,0 +1,13 @@
+package com.capgemeni.angular.dao;
+
+import java.util.List;
+
+import com.capgemeni.angular.beans.ProductInfo;
+
+public interface ProductDAO {
+	boolean updateProductInfo(ProductInfo info);
+	boolean deleteProductInfo(String productName);
+	boolean createProductInfo(ProductInfo info);
+	List<ProductInfo>  getAllRecordsProduct();
+
+}

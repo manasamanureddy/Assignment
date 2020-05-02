@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+E:\AngularAssignment\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3838282976.index
+\angular\src\main\resources

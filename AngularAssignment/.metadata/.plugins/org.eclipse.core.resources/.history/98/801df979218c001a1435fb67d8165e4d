@@ -1,0 +1,19 @@
+package com.capgemeni.angular.dao;
+
+import java.util.List;
+
+import com.capgemeni.angular.beans.ProductInfo;
+
+public interface ProductDAO {
+
+	ProductResponse response = new ProductResponse();
+	boolean isDeleted = service.deleteProductInfo(productId);
+	if (isDeleted) {
+		response.setMessage("record deleted for id" +productId);
+	} else {
+		response.setError(true);
+		response.setMessage("No Records found to delete/unble to delete"+productId);
+	}
+	return response;
+}//end of delete
+}

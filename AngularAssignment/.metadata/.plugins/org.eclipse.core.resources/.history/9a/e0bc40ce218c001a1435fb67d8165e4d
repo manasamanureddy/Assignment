@@ -1,0 +1,39 @@
+package com.capgemeni.angular.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.capgemeni.angular.beans.ProductInfo;
+import com.capgemeni.angular.dao.ProductDAO;
+@Service
+public class ProductServiceImplements implements ProductService{
+	@Autowired
+	private ProductDAO dao;
+
+	@Override
+	public boolean updateProductInfo(ProductInfo info) {
+		
+		return dao.updateProductInfo(info);
+	}
+
+	@Override
+	public boolean deleteProductInfo(String productName) {
+
+		return dao.deleteProductInfo(productName);
+	}
+
+	@Override
+	public boolean createProductInfo(ProductInfo info) {
+		
+		return dao.createProductInfo(info);
+	}
+
+	@Override
+	public List<ProductInfo> getAllRecordsProduct() {
+		
+		return dao.getAllRecordsProduct();
+	}
+
+}

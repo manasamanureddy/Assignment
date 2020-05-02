@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+E:\AngularAssignment\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2353501146.index
+1293405142.index
+2338971712.index
+3001412590.index
+1085486570.index
+2094723015.index
